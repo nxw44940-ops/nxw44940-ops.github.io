@@ -20,6 +20,16 @@ header, footer {
   font-size: 2rem;
   color: white;
 }
+
+#toggle-nav-btn {
+  background-color: #729655;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
 .nav-links {
   display: flex;
   justify-content: center;
