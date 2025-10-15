@@ -9,6 +9,7 @@ header, footer {
   background-color: #2f4f4f;
   padding: 1rem;
 }
+
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -70,15 +71,6 @@ header, footer {
   text-align: center;
 }
 
-#toggle-nav-btn {
-  background-color: #2f4f4c;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
-}
 .nav-links {
   display: flex;
   justify-content: center;
@@ -104,7 +96,7 @@ header, footer {
 }
 
 .step-photo {
-  flex: 1;
+  flex: 2;
   min-width: 300px;
 }
 
@@ -116,7 +108,7 @@ header, footer {
 }
 
 .step-info {
-  flex: 2;
+  flex: 1.5;
   min-width: 300px;
   text-align: center;
   display: flex;
@@ -132,12 +124,9 @@ header, footer {
 
 .step-info ul {
   text-align: left;
-  text-align: flex-start;
   padding-left: 1.2rem;
   margin-top: 0.5rem;
 }
-
-
 
 .step-info h2 {
   color: #3a2f25;
@@ -149,10 +138,6 @@ header, footer {
   color: #2f4f4c;
 }
 
-.step-info ul {
-  padding-left: 1.2rem;
-  margin-top: 0.5rem;
-}
 .home-layout {
   display: flex;
   align-items: center;
@@ -192,6 +177,13 @@ header, footer {
   flex: 2;
   min-width: 300px;
 }
+.bw-icon {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  width: 32px;
+  height: 32px;
+  margin: 0 8px;
+}
 
 @media (max-width: 768px) {
   .header-content {
@@ -210,16 +202,7 @@ header, footer {
   body.nav-open #primary-nav {
     grid-template-rows: 1fr;
   }
-
-  .columns {
-    flex-direction: column;
-  }
-
-  #toggle-nav-btn {
-    display: block;
-    margin-left: auto;
-  }
-
+  
   .nav-links {
     flex-direction: column;
     align-items: center;

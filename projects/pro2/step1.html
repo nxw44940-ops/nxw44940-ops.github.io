@@ -22,13 +22,12 @@
           <a href="step7.html" class="step-button">Step 7</a>
         </div>
       </nav>
-      <button id="toggle-nav-btn" aria-label="Toggle navigation menu"></button>
     </div>
   </header>
 <main>
   <section class="step-layout">
     <div class="step-photo">
-      <img src="step1.jpg" alt="Herbs and oils for Step 1" />
+      <img src="step1.jpg" alt="Ingredients" />
     </div>
 
     <div class="step-info">
@@ -55,19 +54,6 @@
   <footer>
     <p>© 2025 Herbal Haven. All rights reserved.</p>
   </footer>
-
-  <script>
-    window.onload = () => {
-      const toggleNavBtn = document.getElementById('toggle-nav-btn');
-      toggleNavBtn.innerHTML = '&#9776;';
-      toggleNavBtn.setAttribute('aria-expanded', 'false');
-
-      toggleNavBtn.addEventListener('click', () => {
-        const isOpen = document.body.classList.toggle('nav-open');
-        toggleNavBtn.innerHTML = isOpen ? '&#x2715;' : '&#9776;';
-        toggleNavBtn.setAttribute('aria-expanded', isOpen.toString());
-      });
-    };
   </script>
 </body>
 </html>
