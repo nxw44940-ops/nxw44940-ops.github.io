@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step 2 – Herbal Haven</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+        <h1><a href="index.html">Herbal Haven</a></h1>
+        <nav id="primary-nav">
+        <div class="steps">
+          <a href="step1.html" class="step-button active">Step 1</a>
+          <a href="step2.html" class="step-button">Step 2</a>
+          <a href="step3.html" class="step-button">Step 3</a>
+          <a href="step4.html" class="step-button">Step 4</a>
+          <a href="step5.html" class="step-button">Step 5</a>
+          <a href="step6.html" class="step-button">Step 6</a>
+          <a href="step7.html" class="step-button">Step 7</a>
+        </div>
+      </nav>
+      <button id="toggle-nav-btn" aria-label="Toggle navigation menu"></button>
+    </div>
+  </header>
+<main>
+  <section class="step-layout">
+    <div class="step-photo">
+      <img src="step2.jpg" alt="Herbs and oils for Step 1" />
+    </div>
+
+    <div class="step-info">
+      <h2>Step 2: Sterilize</h2>
+
+      <h3>Sterilize Your Tools</h3>
+      <ul>
+        <li>jar</li>
+        <li>funnel</li>
+        <li>measuring spoons</li>
+      </ul>
+       <div class="step-navigation">
+       <a href="step1.html" class="step-button">Back</a>
+       <a href="step3.html" class="step-button">Next</a>
+    </div>
+    </div>
+  </section>
+</main>
+  <footer>
+    <p>© 2025 Herbal Haven. All rights reserved.</p>
+  </footer>
+
+  <script>
+    window.onload = () => {
+      const toggleNavBtn = document.getElementById('toggle-nav-btn');
+      toggleNavBtn.innerHTML = '&#9776;';
+      toggleNavBtn.setAttribute('aria-expanded', 'false');
+
+      toggleNavBtn.addEventListener('click', () => {
+        const isOpen = document.body.classList.toggle('nav-open');
+        toggleNavBtn.innerHTML = isOpen ? '&#x2715;' : '&#9776;';
+        toggleNavBtn.setAttribute('aria-expanded', isOpen.toString());
+      });
+    };
+  </script>
+</body>
+</html>
