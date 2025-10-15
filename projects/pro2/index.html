@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,65 +52,3 @@
   </footer>
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exercise5</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
- <header>
-  <div class="header-content">
-    <h1>Herbal Haven</h1>
-    <nav id="primary-nav">
-      <div class="steps">
-        <a href="step1.html" class="step-button">Step 1</a>
-        <a href="step2.html" class="step-button">Step 2</a>
-        <a href="step3.html" class="step-button">Step 3</a>
-        <a href="step4.html" class="step-button">Step 4</a>
-        <a href="step5.html" class="step-button">Step 5</a>
-        <a href="step6.html" class="step-button">Step 6</a>
-        <a href="step7.html" class="step-button">Step 7</a>
-      </div>
-    </nav>
-
-    <button id="toggle-nav-btn" aria-label="Toggle navigation menu"></button>
-  </div>
-</header>
- <main>
-  <section class="home-layout">
-    <div class="home-photo">
-      <img src="pro2homepage.jpg" alt="A box of essential oils" />
-    </div>
-
-    <div class="home-info">
-      <h2>Nurture Your Roots</h2>
-      <p>A Guide to Homemade Hair Oil</p>
-
-      
-      <a href="step1.html" class="step-button">Go to Step 1 →</a>
-    </div>
-  </section>
-</main>
-  <footer>
-    <p>© 2025 Herbal Haven. All rights reserved.</p>
-  </footer>
-  <script>
-  window.onload = () => {
-    const toggleNavBtn = document.getElementById('toggle-nav-btn');
-    toggleNavBtn.innerHTML = '&#9776;'; // hamburger icon
-    toggleNavBtn.setAttribute('aria-expanded', 'false'); // initial state
-
-    toggleNavBtn.addEventListener('click', () => {
-      const isOpen = document.body.classList.toggle('nav-open');
-      toggleNavBtn.innerHTML = isOpen ? '&#x2715;' : '&#9776;';
-      toggleNavBtn.setAttribute('aria-expanded', isOpen.toString());
-    });
-  };
-</script>
-</body>
-</html>
->>>>>>> 439355aa34ad43bb1f1a0c0bcdfe585d17f3ec39
